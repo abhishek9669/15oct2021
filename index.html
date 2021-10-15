@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        //1. funcation defination
+        function myFunctionA(num) {//num is a formal arugement/parameter
+            //funcation  body
+            //alert(num.length);
+
+            //alert(num.charAt(0));
+            for (p = (num.length - 1); p >= 0; p--) {
+                console.log(num.charAt(p));
+
+                for (var i = 0; i < num.length; i++) {
+                    console.log(num.charAt(i));
+                    if (num.charAt(p) == num.charAt(i)) {
+                        isPalindrom = true;
+                    } else {
+                        isPalindrom = false;
+                    }
+
+
+                }
+            }
+
+            if (isPalindrom == true) {
+                alert(num + " is a palindrome number");
+            } else {
+                alert(num + " is not a palindrome number");
+            }
+        }
+
+        let number = prompt('please enter your first number');
+
+        //number = parseInt(number);//convet string to number
+
+        //alert(number +10);
+        //2.funcation colling
+        myFunctionA(number);
+
+
+    </script>
+</body>
+
+</html>
